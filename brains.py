@@ -86,7 +86,7 @@ net.model.fit(
     validation_batch_size = 32,
 )
 
-save_path = 'saves/faces_model_save_2023_03_10_20_epochs'
+save_path = 'saves/faces_model_save_2023_03_10_100_epochs'
 net.save(save_path)
 with open(f'{save_path}/class_names.data', 'wb') as f:
     pickle.dump(train.class_names, f)
